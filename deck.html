@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VAT2 Seed Deck</title>
+<meta name="description" content="A brain that is grown and selected, not trained. Seed deck: proof from two runs, the $100k hardware ask, milestones.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#0E1220; --surface:#161B2C; --line:#2A3148;
+  --ink:#ECE9E1; --ink-2:#B9BECD; --muted:#8B93AB;
+  --heat:#F2A33C; --heat-2:#FFC46B; --heat-dim:#7A4E1A;
+  --recipe:#d95926; --head:#3987e5; --addressed:#199e70; --control:#9085e9; --crit:#e66767;
+  --display:"Fraunces",Georgia,serif; --body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif; --mono:"IBM Plex Mono",Menlo,monospace;
+}
+html,body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased}
+.deck{display:flex;flex-direction:column;align-items:center;gap:28px;padding:28px 16px 60px}
+.slide{width:min(1200px,96vw);aspect-ratio:16/9;background:var(--ground);border:1px solid var(--line);border-radius:6px;box-sizing:border-box;padding:3.2vw 3.6vw;display:grid;grid-template-rows:auto 1fr auto;position:relative;overflow:hidden;font-size:clamp(12px,1.35vw,20px)}
+.slide.hot{background:linear-gradient(160deg,#171B2D 0%,#0E1220 60%)}
+.top{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.62em;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.top b{color:var(--heat);font-weight:500}
+.bot{display:flex;justify-content:space-between;font-family:var(--mono);font-size:.58em;color:var(--muted)}
+.mid{display:grid;align-content:center;gap:.9em}
+h1{font-family:var(--display);font-weight:700;font-style:italic;font-size:3.6em;line-height:.98;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h1 em,h2 em{font-style:normal;color:var(--heat-2)}
+h2{font-family:var(--display);font-weight:600;font-size:2.3em;line-height:1.04;margin:0;letter-spacing:-.005em;text-wrap:balance;max-width:24ch}
+p{margin:0;color:var(--ink-2);font-size:1em;line-height:1.45;max-width:58ch}
+p.big{font-size:1.35em;color:var(--ink);max-width:40ch;line-height:1.3}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:2.4em;align-items:center}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4em}
+.tile{border-top:2px solid var(--heat-dim);padding-top:.7em}
+.tile .v{font-family:var(--display);font-weight:600;font-size:3em;line-height:1;color:var(--heat-2);font-variant-numeric:tabular-nums}
+.tile .k{font-family:var(--mono);font-size:.62em;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:.5em}
+.tile .t{color:var(--ink-2);font-size:.85em;margin-top:.4em;line-height:1.4}
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4em}
+svg.fig{width:100%;height:auto;display:block}
+table{border-collapse:collapse;width:100%;font-size:.85em}
+th,td{text-align:left;padding:.42em .6em;border-bottom:1px solid var(--line)}
+th{font-family:var(--mono);font-size:.7em;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+td.n{font-family:var(--mono);text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+tr.total td{border-top:2px solid var(--heat-dim);border-bottom:0;color:var(--heat-2);font-weight:600}
+.stamp{position:absolute;right:3.6vw;top:3.2vw;font-family:var(--mono);font-size:.6em;color:var(--muted)}
+ul{margin:0;padding-left:1.1em;color:var(--ink-2);line-height:1.5}
+ul li b{color:var(--ink)}
+.honest{border-left:3px solid var(--heat-dim);padding:.3em .9em;color:var(--ink-2);font-size:.85em;max-width:60ch}
+.nav{position:fixed;right:14px;bottom:12px;font-family:var(--mono);font-size:12px;color:var(--muted);background:rgba(14,18,32,.85);border:1px solid var(--line);border-radius:4px;padding:6px 10px}
+@media print{body{background:#fff}.deck{gap:0;padding:0}.slide{width:100%;border:0;border-radius:0;page-break-after:always;font-size:16px}.nav{display:none}}
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<section class="slide hot">
+  <div class="top"><span><b>VAT2</b> · seed · Sept 2026</span><span>1 / 11</span></div>
+  <div class="mid">
+    <h1>A brain that is <em>grown and selected,</em><br>not trained.</h1>
+    <p class="big">Forward-only bodies from sub-kilobyte genomes. A population that climbs. Two runs on two consumer cards. Ask: <em style="color:var(--heat-2);font-style:normal">$100k of hardware.</em></p>
+  </div>
+  <div class="bot"><span>Baron · 3DL</span><span>run records vat2-grand-3 / -4, 2026-09-02/03</span></div>
+</section>
+
+<section class="slide">
+  <div class="top"><span><b>01</b> the wall</span><span>2 / 11</span></div>
+  <div class="mid cols">
+    <h2>Every frontier model is one training run. <em>The run has an end.</em></h2>
+    <div class="three">
+      <div class="tile"><div class="v">1</div><div class="k">place</div><div class="t">Backprop needs the whole model and its gradients together. The shape is fixed before the first token.</div></div>
+      <div class="tile"><div class="v">0</div><div class="k">learning after deploy</div><div class="t">The shipped model is frozen. The next one starts over.</div></div>
+      <div class="tile"><div class="v">∞</div><div class="k">idle volunteers</div><div class="t">A thousand people with one card each cannot help a batch.</div></div>
+    </div>
+  </div>
+  <div class="bot"><span></span><span>VAT2</span></div>
+</section>
+
+<section class="slide">
+  <div class="top"><span><b>02</b> the idea</span><span>3 / 11</span></div>
+  <div class="mid cols">
+    <div>
+      <h2>Separate state from compute. <em>Let selection find the architecture.</em></h2>
+      <p style="margin-top:.8em">Bodies grow from a grammar in a genome under 1 KB. The genome writes the learning rule too. No backward pass, so a body's weights are its only state: it lives on any card and moves mid-life.</p>
+      <p>A reaper keeps the climbers. A separate process, the stoker, appends rungs. Wasting the card is fatal.</p>
+    </div>
+    <svg class="fig" viewBox="0 0 420 240" aria-label="Store at the centre, workers, reaper, stoker around it">
+      <rect width="420" height="240" fill="#0A0D18" rx="4"/>
+      <rect x="150" y="92" width="120" height="56" rx="4" fill="#1E2436" stroke="#F2A33C"/>
+      <text x="210" y="116" text-anchor="middle" fill="#ECE9E1" font-family="Fraunces,serif" font-size="16" font-weight="600">the store</text>
+      <text x="210" y="134" text-anchor="middle" fill="#8B93AB" font-family="IBM Plex Mono,monospace" font-size="9">genomes · weights · rungs · positions</text>
+      <g fill="#161B2C" stroke="#2A3148"><rect x="20" y="26" width="112" height="42" rx="4"/><rect x="20" y="172" width="112" height="42" rx="4"/><rect x="288" y="26" width="112" height="42" rx="4"/><rect x="288" y="172" width="112" height="42" rx="4"/></g>
+      <g fill="#ECE9E1" font-family="IBM Plex Sans,sans-serif" font-size="12" text-anchor="middle"><text x="76" y="44">worker · card 0</text><text x="76" y="190">worker · card N</text><text x="344" y="44">reaper</text><text x="344" y="190">stoker</text></g>
+      <g fill="#8B93AB" font-family="IBM Plex Mono,monospace" font-size="7.5" text-anchor="middle"><text x="76" y="58">lease · tick · publish</text><text x="76" y="204">any machine, any owner</text><text x="344" y="58">keep climbers, breed</text><text x="344" y="204">append rungs</text></g>
+      <g stroke="#7A4E1A" stroke-width="1.5"><path d="M132 47 L150 98"/><path d="M132 193 L150 142"/><path d="M288 47 L270 98"/><path d="M288 193 L270 142"/></g>
+    </svg>
+  </div>
+  <div class="bot"><span></span><span>VAT2</span></div>
+</section>
+
+<section class="slide">
+  <div class="top"><span><b>03</b> proof</span><span>4 / 11</span></div>
+  <div class="mid">
+    <h2>The population climbs the whole ladder. <em>Twice.</em></h2>
+    <svg class="fig" id="trend" viewBox="0 0 1080 300" aria-label="Rung reached over rounds, both runs"></svg>
+    <p style="font-family:var(--mono);font-size:.68em;color:var(--muted)">Rung reached per round, read from the run logs. Left: vat2-grand-3 to its crash. Right: vat2-grand-4 resumed from the saved genomes under fixed code and re-earned all ten rungs at the same pace.</p>
+  </div>
+  <div class="bot"><span></span><span>VAT2</span></div>
+</section>
+
+<section class="slide">
+  <div class="top"><span><b>04</b> by the numbers</span><span>5 / 11</span></div>
+  <div class="mid">
+    <div class="four">
+      <div class="tile"><div class="v">11</div><div class="k">rounds to rung 1</div><div class="t">The previous founder set needed 113.</div></div>
+      <div class="tile"><div class="v">10/10</div><div class="k">ladder, twice</div><div class="t">Round 131; again 115 rounds after a resume.</div></div>
+      <div class="tile"><div class="v">1 / 11</div><div class="k">rung per rounds</div><div class="t">One rung per selection cadence. Metronomic.</div></div>
+      <div class="tile"><div class="v">836 B</div><div class="k">genome of the winner</div><div class="t">Grows a 3,550-pair body; children ten times larger bred from the same grammar.</div></div>
+    </div>
+    <p class="honest">Stated plainly: the acuity ladder tops out at the sharp glyph, so both runs ended parked on rung 10. That is the instrument's ceiling, and the next universe removes it.</p>
+  </div>
+  <div class="bot"><span></span><span>VAT2</span></div>
+</section>
+
+<section class="slide">
+  <div class="top"><span><b>05</b> it learns</span><span>6 / 11</span></div>
+  <div class="mid cols">
+    <div>
+      <h2>An evolved body learns within its life. <em>The hand-built control does not.</em></h2>
+      <p style="margin-top:.8em">Measured on the card through the real exam path: b95, a 3,550-pair body the search produced, gains reproduction skill on every reading-span step it was shown. The R15d control genome, which has no plasticity by design, gains nothing.</p>
+    </div>
+    <svg class="fig" viewBox="0 0 520 260" aria-label="Learned delta per reading-span step: b95 versus control">
+      <rect width="520" height="260" fill="#0A0D18" rx="4"/>
+      <g stroke="#2A3148"><line x1="70" y1="200" x2="500" y2="200"/><line x1="70" y1="120" x2="500" y2="120" stroke-dasharray="3 5"/></g>
+      <g font-family="IBM Plex Mono,monospace" font-size="10" fill="#8B93AB"><text x="20" y="204">0.00</text><text x="20" y="124">0.05</text></g>
+      <g fill="#d95926">
+        <rect x="110" y="117" width="44" height="83" rx="3"/><rect x="210" y="122" width="44" height="78" rx="3"/><rect x="310" y="115" width="44" height="85" rx="3"/><rect x="410" y="97" width="44" height="103" rx="3"/>
+      </g>
+      <g fill="#9085e9"><rect x="158" y="199" width="26" height="1"/><rect x="258" y="199" width="26" height="1"/><rect x="358" y="199" width="26" height="1"/><rect x="458" y="199" width="26" height="1"/></g>
+      <g font-family="IBM Plex Mono,monospace" font-size="10" fill="#ECE9E1" text-anchor="middle"><text x="132" y="110">.052</text><text x="232" y="115">.049</text><text x="332" y="108">.053</text><text x="432" y="90">.065</text></g>
+      <g font-family="IBM Plex Mono,monospace" font-size="10" fill="#8B93AB" text-anchor="middle"><text x="145" y="222">step 1</text><text x="245" y="222">step 2</text><text x="345" y="222">step 3</text><text x="445" y="222">step 4</text></g>
+      <g font-family="IBM Plex Mono,monospace" font-size="10"><rect x="70" y="238" width="10" height="10" fill="#d95926"/><text x="86" y="247" fill="#B9BECD">b95, evolved, 3,550 pairs</text><rect x="260" y="238" width="10" height="10" fill="#9085e9"/><text x="276" y="247" fill="#B9BECD">R15d control: 0.000 at every step</text></g>
+    </svg>
+  </div>
+  <div class="bot"><span>learned delta = trained minus birth, retention and generalisation guarded; rail job vat2-axis-calib-1</span><span>VAT2</span></div>
+</section>
+
+<section class="slide">
+  <div class="top"><span><b>06</b> the ramp</span><span>7 / 11</span></div>
+  <div class="mid cols">
+    <div>
+      <h2>The curriculum has no top. <em>It ends at a conversation.</em></h2>
+      <p style="margin-top:.8em">Reading span grows from one glyph to words to sentences from public-domain readers and on up the corpus bands. Recall grows with vocabulary. The stoker appends a rung whenever bodies saturate the last one.</p>
+      <p>Destination: a microphone, "hello", and an answer that generalises. The reflex that maps one sound to another is easy and excluded.</p>
+    </div>
+    <svg class="fig" viewBox="0 0 420 240" aria-label="Axes with open ends">
+      <rect width="420" height="240" fill="#0A0D18" rx="4"/>
+      <g font-family="IBM Plex Mono,monospace" font-size="11" fill="#8B93AB"><text x="18" y="58">acuity</text><text x="18" y="112">reading span</text><text x="18" y="166">recall K</text><text x="18" y="218">speech</text></g>
+      <g stroke="#2A3148" stroke-width="2"><line x1="130" y1="54" x2="300" y2="54"/><line x1="130" y1="108" x2="400" y2="108"/><line x1="130" y1="162" x2="400" y2="162"/><line x1="130" y1="214" x2="400" y2="214"/></g>
+      <g fill="#F2A33C"><circle cx="300" cy="54" r="6"/><circle cx="190" cy="108" r="6"/><circle cx="160" cy="162" r="6"/></g>
+      <text x="306" y="48" fill="#B9BECD" font-family="IBM Plex Mono,monospace" font-size="9.5">sharp glyph · closed</text>
+      <g fill="#F2A33C" opacity=".4"><polygon points="392,102 404,108 392,114"/><polygon points="392,156 404,162 392,168"/><polygon points="392,208 404,214 392,220"/></g>
+      <text x="200" y="100" fill="#B9BECD" font-family="IBM Plex Mono,monospace" font-size="9.5">glyph → word → readers → corpus</text>
+      <text x="170" y="154" fill="#B9BECD" font-family="IBM Plex Mono,monospace" font-size="9.5">vocabulary accretes</text>
+      <text x="134" y="206" fill="#B9BECD" font-family="IBM Plex Mono,monospace" font-size="9.5">mic in, voice out</text>
+    </svg>
+  </div>
+  <div class="bot"><span></span><span>VAT2</span></div>
+</section>
+
+<section class="slide">
+  <div class="top"><span><b>07</b> scale</span><span>8 / 11</span></div>
+  <div class="mid">
+    <h2>Three multipliers. <em>None waits on the others.</em></h2>
+    <div class="three" style="margin-top:.6em">
+      <div class="tile"><div class="v">×N</div><div class="k">workers</div><div class="t">Any card, any owner: lease a slice, tick, publish, release. A dead worker loses nothing. Contributors run the same binary; trust is a replication factor on selection-critical reads only.</div></div>
+      <div class="tile"><div class="v">×1000</div><div class="k">body size</div><div class="t">27B weights is three grammar depth steps from today's founder. Int8 residency, no duplicate copies, paging, cross-card partition; plasticity that cools with age keeps learning cost on the growth front.</div></div>
+      <div class="tile"><div class="v">∞</div><div class="k">rungs</div><div class="t">The stoker climbs the corpus bands on its own clock. Its ceiling is how fast text is staged: a people-and-scripts problem, not GPUs.</div></div>
+    </div>
+    <p class="honest">Compute honesty: today's tick launches small kernels per body and block. At 27B that must become a few fused, bandwidth-bound kernels per card, about 30 ms per tick. Filed as an engineering front; it is what the rack is for.</p>
+  </div>
+  <div class="bot"><span></span><span>VAT2</span></div>
+</section>
+
+<section class="slide hot">
+  <div class="top"><span><b>08</b> the ask</span><span>9 / 11</span></div>
+  <div class="mid cols">
+    <div>
+      <h2><em>$100,000</em> of hardware for a run that never stops.</h2>
+      <p style="margin-top:.8em">Today: one 3090, one A4500, ten dollars of contributor credit. The continuous run is built and pre-registered; it needs a machine that does not stop and enough cards to run bodies at the size where the scaling question is measurable.</p>
+      <ul style="margin-top:.6em;font-size:.95em">
+        <li><b>A run that does not end</b>: store on mirrored NVMe, eight workers, stoker on its own clock.</li>
+        <li><b>Bodies past 100k pairs</b>: the growth-versus-capability read.</li>
+        <li><b>The contributor path</b> open: one-line join, replication-factor trust.</li>
+      </ul>
+    </div>
+    <table aria-label="Hardware estimate">
+      <tr><th>item</th><th style="text-align:right">est.</th></tr>
+      <tr><td>8 × 32 GB workstation GPUs</td><td class="n">$26k</td></tr>
+      <tr><td>2 × 4-GPU nodes (CPU, 256 GB, chassis, PSU)</td><td class="n">$28k</td></tr>
+      <tr><td>Store host: NVMe mirror, ECC, 25 GbE</td><td class="n">$9k</td></tr>
+      <tr><td>Network, UPS, rack, spares</td><td class="n">$9k</td></tr>
+      <tr><td>Power and colocation, year one</td><td class="n">$14k</td></tr>
+      <tr><td>Contributor compute, year one</td><td class="n">$10k</td></tr>
+      <tr><td>Contingency</td><td class="n">$4k</td></tr>
+      <tr class="total"><td>Total</td><td class="n">$100k</td></tr>
+    </table>
+  </div>
+  <div class="bot"><span>street estimates, September 2026; re-quoted at purchase</span><span>VAT2</span></div>
+</section>
+
+<section class="slide">
+  <div class="top"><span><b>09</b> milestones</span><span>10 / 11</span></div>
+  <div class="mid">
+    <h2>Each milestone is a pre-registered read, <em>published with its data.</em></h2>
+    <table style="margin-top:.4em">
+      <tr><th>when</th><th>milestone</th><th>the read</th></tr>
+      <tr><td class="n">now</td><td>Continuous run on two cards</td><td>Store, workers, reaper, stoker running; frontier rising on open axes; a worker killed and recovered</td></tr>
+      <tr><td class="n">+6 wk</td><td>Rack live, eight workers</td><td>Round time per body flat as workers are added; first contributor attached</td></tr>
+      <tr><td class="n">+3 mo</td><td>Bodies past 100k pairs</td><td>Bounded structure while the frontier rises, or linear growth: the thesis read</td></tr>
+      <tr><td class="n">+6 mo</td><td>Reading from corpus text</td><td>Generalisation gap on unseen text ≈ trained</td></tr>
+      <tr><td class="n">+12 mo</td><td>Hundreds of contributors, the mic</td><td>A body answering spoken input, graded on generalisation</td></tr>
+    </table>
+  </div>
+  <div class="bot"><span>no read at one scale is claimed to settle another</span><span>VAT2</span></div>
+</section>
+
+<section class="slide hot">
+  <div class="top"><span><b>10</b> who</span><span>11 / 11</span></div>
+  <div class="mid cols">
+    <div>
+      <h2>An experimentalist and a method that keeps the machines honest.</h2>
+      <p style="margin-top:.8em">Baron sets the objective and rules on design. A standing Claude watch runs the build and the runs under a written program: pre-registration before every launch, every check committed before the data, a null treated as an instrument fault until a control moves it.</p>
+      <p class="big" style="margin-top:.8em">Equity or a structured grant, your choice. What you get: a seat at the first continuous run and the data as it lands.</p>
+    </div>
+    <div>
+      <div class="tile"><div class="k">contact</div><div class="t" style="font-size:1.1em;color:var(--ink)">Baron · 3DL</div><div class="t">The climb, live from the run logs: <a href="index.html" style="color:var(--heat-2)">the climb page</a>. Run records, pre-registrations and the item tree on request.</div></div>
+    </div>
+  </div>
+  <div class="bot"><span>VAT2 · seed · Sept 2026</span><span>end</span></div>
+</section>
+
+</div>
+<div class="nav">↑ ↓ or scroll · P for print</div>
+<script>
+(function(){
+  const S=[[0,0],[11,1],[23,2],[34,3],[46,4],[57,5],[63,5],[75,5],[77,6],[80,6],[92,7],[102,7],[110,8],[120,9],[131,10],[165,10]];
+  const S2=[[166,0],[177,1],[189,2],[200,3],[212,4],[223,5],[235,6],[246,7],[258,8],[269,9],[281,10],[387,10]];
+  const t=document.getElementById('trend'),NS='http://www.w3.org/2000/svg',TW=1080,TH=300,l=60,r=24,tp=28,bt=44;
+  const ex=x=>l+(x/387)*(TW-l-r),ey=y=>TH-bt-(y/10)*(TH-tp-bt);
+  const mk=(n,a)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);t.appendChild(e);return e};
+  for(let s=0;s<=10;s+=2){mk('line',{x1:l,y1:ey(s),x2:TW-r,y2:ey(s),stroke:'#2A3148'});mk('text',{x:l-10,y:ey(s)+4,'text-anchor':'end',fill:'#8B93AB','font-size':12,'font-family':'IBM Plex Mono, monospace'}).textContent=s}
+  for(const x of [0,100,166,200,300,387])mk('text',{x:ex(x),y:TH-bt+22,'text-anchor':'middle',fill:'#8B93AB','font-size':12,'font-family':'IBM Plex Mono, monospace'}).textContent=x;
+  const step=(pts)=>{let d='';pts.forEach((p,i)=>{if(i===0){d+='M'+ex(p[0])+' '+ey(p[1])}else{d+='L'+ex(p[0])+' '+ey(pts[i-1][1])+'L'+ex(p[0])+' '+ey(p[1])}});return d};
+  mk('path',{d:step(S),fill:'none',stroke:'#F2A33C','stroke-width':3,'stroke-linejoin':'round'});
+  mk('path',{d:step(S2),fill:'none',stroke:'#F2A33C','stroke-width':3,'stroke-linejoin':'round'});
+  mk('line',{x1:ex(165),y1:tp,x2:ex(165),y2:TH-bt,stroke:'#e66767','stroke-dasharray':'3 4'});
+  mk('text',{x:ex(165)-8,y:tp+10,'text-anchor':'end',fill:'#B9BECD','font-size':12,'font-family':'IBM Plex Mono, monospace'}).textContent='out-of-memory crash, round 169';
+  mk('text',{x:ex(166)+8,y:tp+10,fill:'#B9BECD','font-size':12,'font-family':'IBM Plex Mono, monospace'}).textContent='resumed from saved genomes';
+  mk('text',{x:ex(131)-8,y:ey(10)-10,'text-anchor':'end',fill:'#FFC46B','font-size':13,'font-family':'IBM Plex Mono, monospace'}).textContent='rung 10 · round 131';
+  mk('text',{x:ex(281)+8,y:ey(10)-10,fill:'#FFC46B','font-size':13,'font-family':'IBM Plex Mono, monospace'}).textContent='rung 10 · round 281';
+  mk('text',{x:TW-r,y:TH-6,'text-anchor':'end',fill:'#8B93AB','font-size':11,'font-family':'IBM Plex Mono, monospace'}).textContent='round';
+  const slides=[...document.querySelectorAll('.slide')];let i=0;
+  document.addEventListener('keydown',e=>{if(e.key==='ArrowDown'||e.key==='PageDown'||e.key===' '){e.preventDefault();i=Math.min(slides.length-1,i+1);slides[i].scrollIntoView({behavior:'smooth'})}else if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();i=Math.max(0,i-1);slides[i].scrollIntoView({behavior:'smooth'})}else if(e.key==='p'||e.key==='P'){window.print()}});
+})();
+</script>
+</body>
+</html>
